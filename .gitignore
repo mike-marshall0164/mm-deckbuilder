@@ -20,3 +20,4 @@ Homestead.json
 .rocketeer/
 docker-compose.yml
 
+/.vscode
