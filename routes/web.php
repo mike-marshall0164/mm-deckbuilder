@@ -12,5 +12,21 @@
 */
 
 $router->get('/', function () use ($router) {
-    return $router->app->version();
+    return "hello world";
+});
+
+$router->get('cards[/{id}]', function($id = null) {
+    $cards = [1=> "card 1", 2  => "card 2"];
+
+    if(isset($id)) {
+        return json_encode($cards[$id]);
+    }
+    else {
+        return json_encode($cards);
+    }
+    
+});
+
+$router->get('info', function() {
+    return phpinfo();
 });
