@@ -30,3 +30,16 @@ $router->get('cards[/{id}]', function($id = null) {
 $router->get('info', function() {
     return phpinfo();
 });
+
+
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('masters',  ['uses' => 'MasterController@showAllMasters']);
+  
+    $router->get('masters/{id}', ['uses' => 'MasterController@showOneMaster']);
+  
+    $router->post('masters', ['uses' => 'MasterController@create']);
+  
+    $router->delete('masters/{id}', ['uses' => 'MasterController@delete']);
+  
+    $router->put('masters/{id}', ['uses' => 'MasterController@update']);
+  });
