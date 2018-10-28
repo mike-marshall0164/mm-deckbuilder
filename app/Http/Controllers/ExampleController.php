@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-class ExampleController extends Controller
+class MasterController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -13,6 +13,8 @@ class ExampleController extends Controller
     {
         //
     }
-
+    public function showAllMasters() {
+        return response()->json(Master::all());
+    }
     //
 }

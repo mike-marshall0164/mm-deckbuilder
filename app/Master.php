@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Master extends Model 
 {
-    use Authenticatable, Authorizable;
+    // use Authenticatable, Authorizable;
 
     /**
      * The attributes that are mass assignable.
