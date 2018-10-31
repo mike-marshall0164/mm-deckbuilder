@@ -21,4 +21,4 @@ Homestead.json
 docker-compose.yml
 
 /.vscode
-/.env
+/local.env

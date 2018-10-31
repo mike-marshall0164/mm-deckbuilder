@@ -18,6 +18,21 @@ class Master extends Model
         'target_count', 'attack_speed', 'attack_delay', 'aoe_size', 'can_hit_air'
     ];
 
+    protected $dates = [];
+
+    public static $rules = [
+        'name' => 'required',
+        'description' => 'required',
+        'extra_data' => '',
+        'range' => 'required',
+        'attack_damage' => 'required',
+        'target_count' => '',
+        'attack_speed' => '',
+        'attack_delay' => '',
+        'aoe_size' => '',
+        'can_hit_air' => ''
+    ];
+
     /**
      * The attributes excluded from the model's JSON form.
      *

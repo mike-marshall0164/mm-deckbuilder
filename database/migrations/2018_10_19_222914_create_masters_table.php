@@ -18,6 +18,7 @@ class CreateMastersTable extends Migration
             $table->timestamps();
             $table->string("name");
             $table->string("description");
+            $table->string('img_url');
             $table->string("extra_data");
             $table->decimal("range", 5, 2);
             $table->decimal("attack_damage", 5, 2);

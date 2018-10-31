@@ -15,44 +15,43 @@ $router->get('/', function () use ($router) {
     return "hello world";
 });
 
-
-
 $router->get('info', function() {
     return phpinfo();
 });
 
+/**
+ * Routes for resource card
+ */
+$router->get('card', 'CardsController@all');
+$router->get('card/{id}', 'CardsController@get');
+$router->post('card', 'CardsController@add');
+$router->put('card/{id}', 'CardsController@put');
+$router->delete('card/{id}', 'CardsController@remove');
 
-$router->group(['prefix' => 'api'], function () use ($router) {
-    
-    $router->group(['prefix' => 'cards'], function () use ($router) {
-        $router->get('', function() {
-            $cards = [1=> "card 1", 2  => "card 2"];
-            return json_encode($cards);
-        });
-        
-        $router->get('/{id}', function($id = null) {
-            $cards = [1=> "card 1", 2  => "card 2"];
-            if(isset($id)) {
-                return json_encode($cards[$id]);
-            }
-            else {
-                
-            }
-            
-        });
-    });
+/**
+ * Routes for resource master
+ */
+$router->get('master', 'MastersController@all');
+$router->get('master/{id}', 'MastersController@get');
+$router->post('master', 'MastersController@add');
+$router->put('master/{id}', 'MastersController@put');
+$router->delete('master/{id}', 'MastersController@remove');
 
-    $router->group(['prefix' => 'masters'], function () use ($router) {
-        
-        $router->get('',  ['uses' => 'MasterController@showAllMasters']);
-  
-        $router->get('/{id}', ['uses' => 'MasterController@showOneMaster']);
-    
-        $router->post('', ['uses' => 'MasterController@create']);
-    
-        $router->delete('/{id}', ['uses' => 'MasterController@delete']);
-    
-        $router->put('/{id}', ['uses' => 'MasterController@update']);
-    });
-    
-  });
+
+/**
+ * Routes for resource deck
+ */
+$router->get('deck', 'DecksController@all');
+$router->get('deck/{id}', 'DecksController@get');
+$router->post('deck', 'DecksController@add');
+$router->put('deck/{id}', 'DecksController@put');
+$router->delete('deck/{id}', 'DecksController@remove');
+
+/**
+ * Routes for resource User
+ */
+$router->get('user', 'UsersController@all');
+$router->get('user/{id}', 'UsersController@get');
+$router->post('user', 'UsersController@add');
+$router->put('user/{id}', 'UsersController@put');
+$router->delete('user/{id}', 'UsersController@remove');

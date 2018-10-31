@@ -13,12 +13,41 @@ class CreateCardsTable extends Migration
      */
     public function up()
     {
-        //TODO: look up how to do inheritance best in lumen
+        Schema::create('cards', function (Blueprint $table) {
+            $table->increments('id');
+            $table->timestamps();
+            $table->string('name');
+            $table->string('description');
+            $table->string('extra_info')->nullable();
+            $table->string('card_type'); //minion, spell, building
+            $table->string('rarity'); //common rare, supreme etc.
+            $table->integer('mana_cost')->default(0);
+            $table->integer('crafting_cost');
+            $table->string('img_url');
 
-        // Schema::create('cards', function (Blueprint $table) {
-        //     $table->increments('id');
-        //     $table->timestamps();
-        // });
+            // mostly minion based stats
+            $table->string('unit_type')->nullable(); //ground / air
+            $table->integer('unit_count')->nullable();
+            $table->integer('unit_health')->nullable();
+            $table->integer('unit_speed')->nullable();
+            $table->decimal('unit_range', 5,2)->nullable();
+            $table->integer('damage')->nullable();
+            $table->integer('target_count')->nullable();
+            $table->decimal('attack_speed', 5, 2)->nullable();
+            $table->decimal('attack_delay', 5, 2)->nullable();
+            $table->boolean('can_target_air')->nullable()->default(false);
+
+            // spell based stats
+            $table->decimal('radius', 5, 2)->nullable();
+            $table->decimal('duration', 5,2)->nullable(); //Seconds
+            $table->decimal('delay', 5, 2)->nullable(); //Seconds
+
+
+            //building based stats
+            $table->decimal('unit_production_speed')->nullable(); //seconds until generated
+            
+            
+        });
     }
 
     /**

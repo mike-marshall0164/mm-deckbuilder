@@ -11,9 +11,27 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+// $factory->define(App\User::class, function (Faker\Generator $faker) {
+//     return [
+//         'name' => $faker->name,
+//         'email' => $faker->email,
+//     ];
+// });
+
+/**
+ * Factory definition for model App\Deck.
+ */
+$factory->define(App\Deck::class, function ($faker) {
     return [
-        'name' => $faker->name,
-        'email' => $faker->email,
+        'user_id' => $faker->key,
+    ];
+});
+
+/**
+ * Factory definition for model App\Deck.
+ */
+$factory->define(App\Deck::class, function ($faker) {
+    return [
+        'user_id' => $faker->key,
     ];
 });
