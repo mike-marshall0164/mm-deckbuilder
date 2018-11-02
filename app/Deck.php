@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Deck extends Model {
 
-    protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id"];
+    protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id", "difficulty"];
 
     protected $dates = [];
 
@@ -14,6 +14,7 @@ class Deck extends Model {
         "wins" => "min:0",
         "losses" => "min:0",
         "user_id" => "required|numeric",
+        "difficulty" => "in:BEGINNER,INTERMEDIATE,ADVANCED,EXPERT,MEME"
     ];
 
     public function Master()
