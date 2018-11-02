@@ -41,4 +41,9 @@ class Master extends Model
      */
     protected $hidden = [
     ];
+
+    public function Decks()
+    {
+        return $this->belongsToMany("App\Deck");
+    }
 }

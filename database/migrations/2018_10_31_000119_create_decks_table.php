@@ -18,7 +18,13 @@ class CreateDecksTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')
                 ->references('id')
-                ->on('users');
+                ->on('users')
+                ->onDelete('cascade');
+            $table->integer('master_id')->unsigned();
+            $table->foreign('master_id')
+                ->references('id')
+                ->on('masters')
+                ->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class spell_data extends Seeder
+class SpellSeeder extends Seeder
 {
     /**
      * Run the database seeds.

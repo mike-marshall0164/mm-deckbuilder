@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class minion_data extends Seeder
+class MinionSeeder extends Seeder
 {
     /**
      * Run the database seeds.

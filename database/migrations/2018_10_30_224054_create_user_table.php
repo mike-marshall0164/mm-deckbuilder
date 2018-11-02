@@ -12,8 +12,9 @@ class CreateUserTable extends Migration
             $table->increments('id');
             $table->timestamps();
             $table->string('auth0_id');
-            $table->string('username');
-            $table->string('email')->nullable();
+            $table->string('username')->unique();
+            $table->string('email')->nullable()->unique();
+            $table->string('password');
             // Constraints declaration
 
         });

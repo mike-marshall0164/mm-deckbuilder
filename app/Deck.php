@@ -5,7 +5,7 @@ use Illuminate\Database\Eloquent\Model;
 class Deck extends Model {
 
     protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id", "difficulty"];
-
+    // protected $cards;
     protected $dates = [];
 
     public static $rules = [
@@ -22,7 +22,7 @@ class Deck extends Model {
         return $this->hasOne("App\Master");
     }
 
-    public function Card()
+    public function Cards()
     {
         return $this->hasMany("App\Card");
     }

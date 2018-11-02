@@ -14,10 +14,12 @@ class CreateCardDeckTable extends Migration
             $table->integer('deck_id')->unsigned()->index();
             $table->foreign('card_id')
                 ->references('id')
-                ->on('cards');
+                ->on('cards')
+                ->onDelete('cascade');
             $table->foreign('deck_id')
                 ->references('id')
-                ->on('decks');
+                ->on('decks')
+                ->onDelete('cascade');
 
         });
     }

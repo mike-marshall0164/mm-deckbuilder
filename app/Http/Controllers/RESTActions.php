@@ -51,9 +51,5 @@ trait RESTActions {
         return $this->respond(Response::HTTP_NO_CONTENT);
     }
 
-    protected function respond($status, $data = [])
-    {
-        return response()->json($data, $status);
-    }
 
 }
