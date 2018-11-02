@@ -25,7 +25,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "For each card that costs 5 or more in his hand, Apep gains 35% attack speed.  1st stack is 1.9, then 1.5, then 1.2, and finally 1",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2fnx2fn7x2fIx78mx78_Qkwv.x78vox3fdmzaqwvx3d2m85j7nj8nk1920n4ji7l3jk60kj97ikx26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Apep_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "King Puff",
@@ -40,7 +40,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2f5x2f55x2fXcnn_Qkwv.x78vox3fdmzaqwvx3d9jn623j2mjl6n09l36292n13km442n69x26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/RoyalPuff_Portrait.png"
           ]);
            DB::table('masters')->insert([
             "name"=> "Milloween",
@@ -55,7 +55,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "For each spell in hand, Milloween fires an additional spark",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2fix2fi4x2fUqttwemmv_Qkwv.x78vox3fdmzaqwvx3d8in81jlki751i1jj9m05033l2kn84jj3x26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Millowen_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Mordar",
@@ -70,7 +70,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "Reduces attackspeed every 3rd hit. DPS of each is listed here:",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2fbpcujx2fkx2fk7x2fUwzliz_Qkwv.x78vox2f938x78f-Uwzliz_Qkwv.x78vox3fdmzaqwvx3dj090391m4jk31nk4il64llk420i87303x26q98k.uizsx3dquiom_$/$/$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Mordar_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Ratbo",
@@ -85,7 +85,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2f6x2f6lx2fZibjw_Qkwv.x78vox3fdmzaqwvx3dkl06jll91i210li8n7k1m4705mj4356nx26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Ratbo_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Ravager",
@@ -100,7 +100,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2fnx2fn8x2fZidiomz_Qkwv.x78vox3fdmzaqwvx3d59904jn8262m32421in4m0j096m50lk9x26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Ravager_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Settsu",
@@ -115,7 +115,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "After 5 Shots She Has To Reload Over A 5 Second Duration.",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2f6x2f60x2fAmbbac_Qkwv.x78vox3fdmzaqwvx3d39882978ml4mk8i3l524k68i6l474252x26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Settsu_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Stormbringer",
@@ -130,7 +130,7 @@ class masters_data extends Seeder
             "can_hit_air"=> true,
             "aoe_size"=> "",
             "extra_data"=> "",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2fbpcujx2f8x2f81x2fAbwzu_Qkwv.x78vox2f938x78f-Abwzu_Qkwv.x78vox3fdmzaqwvx3d1ini6l7i4j706nij81m63il064022nnnx26q98k.uizsx3dquiom_$/$/$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Stormbringer_Portrait.jpg"
           ]);
            DB::table('masters')->insert([
             "name"=> "Volco",
@@ -145,7 +145,7 @@ class masters_data extends Seeder
             "can_hit_air"=> false,
             "aoe_size"=> 2,
             "extra_data"=> "",
-            "img_url"=> "https://c-5uwzmx78pmca09x24l9c3x781t2ex78ig1sx2ektwclnzwvbx2evmb.g00.gamepedia.com/g00/3_c-5uqvqwvuiabmza.oiumx78mlqi.kwu_/c-5UWZMXPMCA09x24pbbx78ax3ax2fx2fl9c3x781t2ex78ig1s.ktwclnzwvb.vmbx2fuqvqwvuiabmza_oiumx78mlqi_mvx2f7x2f7mx2fDwtkw_Qkwv.x78vox3fdmzaqwvx3d30l232nj26i7i57i5ji362711388n7l2x26q98k.uizsx3dquiom_$/$/$/$/$"
+            "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Volco.jpg"
           ]);
         
     }
