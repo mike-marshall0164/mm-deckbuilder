@@ -15,7 +15,7 @@ class Master extends Model
      */
     protected $fillable = [
         'name', 'description', 'extra_data', 'range', 'attack_damage',
-        'target_count', 'attack_speed', 'attack_delay', 'aoe_size', 'can_hit_air'
+        'target_count', 'attack_speed', 'attack_delay', 'aoe_size', 'can_hit_air', 'img_url'
     ];
 
     protected $dates = [];
@@ -30,7 +30,8 @@ class Master extends Model
         'attack_speed' => '',
         'attack_delay' => '',
         'aoe_size' => '',
-        'can_hit_air' => ''
+        'can_hit_air' => '',
+        'img_url' => 'url|required'
     ];
 
     /**
