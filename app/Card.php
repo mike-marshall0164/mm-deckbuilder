@@ -17,6 +17,10 @@ class Card extends Model {
 
     public static $rules = [
         "name" => "required",
+        "description" => "required",
+        "card_type"=> "required|in:UNIT,SPELL,BUILDING",
+        "unit_count"=> "nullable",
+        "unit_type"=> "in:GROUND,AIR"
     ];
 
     // Relationships
