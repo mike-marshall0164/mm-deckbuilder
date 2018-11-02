@@ -4,7 +4,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Deck extends Model {
 
-    protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id", "difficulty"];
+    protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id", "master_id", "difficulty"];
     // protected $cards;
     protected $dates = [];
 
