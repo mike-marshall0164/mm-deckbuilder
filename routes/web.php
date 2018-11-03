@@ -12,7 +12,7 @@
 */
 
 $router->get('/', function () use ($router) {
-    return "hello world";
+    return view('testView', ['name' => 'World']);
 });
 
 $router->get('info', function() {
