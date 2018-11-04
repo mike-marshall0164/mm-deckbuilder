@@ -25,7 +25,7 @@ $router->get('info', function() {
 $router->get('card', 'CardsController@all');
 $router->get('card/{id}', 'CardsController@get');
 $router->post('card', 'CardsController@add');
-$router->put('card/{id}', 'CardsController@put');
+$router->patch('card/{id}', 'CardsController@update');
 $router->delete('card/{id}', 'CardsController@remove');
 
 /**
@@ -34,7 +34,7 @@ $router->delete('card/{id}', 'CardsController@remove');
 $router->get('master', 'MastersController@all');
 $router->get('master/{id}', 'MastersController@get');
 $router->post('master', 'MastersController@add');
-$router->put('master/{id}', 'MastersController@put');
+$router->patch('master/{id}', 'MastersController@update');
 $router->delete('master/{id}', 'MastersController@remove');
 
 
@@ -44,7 +44,7 @@ $router->delete('master/{id}', 'MastersController@remove');
 $router->get('deck', 'DecksController@all');
 $router->get('deck/{id}', 'DecksController@get');
 $router->post('deck', 'DecksController@add');
-$router->put('deck/{id}', 'DecksController@put');
+$router->patch('deck/{id}', 'DecksController@update');
 $router->delete('deck/{id}', 'DecksController@remove');
 
 /**
@@ -53,5 +53,5 @@ $router->delete('deck/{id}', 'DecksController@remove');
 $router->get('user', 'UsersController@all');
 $router->get('user/{id}', 'UsersController@get');
 $router->post('user', 'UsersController@add');
-$router->put('user/{id}', 'UsersController@put');
+$router->patch('user/{id}', 'UsersController@update');
 $router->delete('user/{id}', 'UsersController@remove');

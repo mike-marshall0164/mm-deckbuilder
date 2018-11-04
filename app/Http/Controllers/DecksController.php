@@ -30,7 +30,7 @@ class DecksController extends Controller {
         return $this->respond(Response::HTTP_CREATED, $m::create($request->all()));
     }
 
-    public function put(Request $request, $id)
+    public function update(Request $request, $id)
     {
         $m = self::MODEL;
         $this->validate($request, $m::$rules);
@@ -51,6 +51,4 @@ class DecksController extends Controller {
         $m::destroy($id);
         return $this->respond(Response::HTTP_NO_CONTENT);
     }
-
-    
 }
