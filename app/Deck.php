@@ -31,4 +31,9 @@ class Deck extends Model {
     {
         return $this->belongsToMany(Card::class, 'card_deck', 'deck_id', 'card_id');
     }
+
+    public function cardsCount()
+    {
+        return $this->belongsToMany(Cards::class)->selectRaw('count(*) as aggregate');
+    }
 }
