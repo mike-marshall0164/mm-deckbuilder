@@ -16,12 +16,16 @@ class DefaultUsersSeeder extends Seeder
         User::create([
             'username' => 'LordSalem',
             'email'=> 'asdf@gmail.com',
-            'password' => '123secret'
+            'password' => '123secret',
+            "created_at" => date("Y-m-d H:i:s"),
+            "updated_at" => date("Y-m-d H:i:s")
         ]);
        User::create([
            'username' => 'taylorotwell',
            'email'=> 'fakeemail@gmail.com',
-           'password' => 'greatsecret'
+           'password' => 'greatsecret',
+           "created_at" => date("Y-m-d H:i:s"),
+           "updated_at" => date("Y-m-d H:i:s")
        ]);
     }
 }
