@@ -58,3 +58,5 @@ $router->get('user/{id}', 'UsersController@get');
 $router->post('user', 'UsersController@add');
 $router->patch('user/{id}', 'UsersController@update');
 $router->delete('user/{id}', 'UsersController@remove');
+
+$router->get('user/{id}/deck', 'UsersController@getDecks');
