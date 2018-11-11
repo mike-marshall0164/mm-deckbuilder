@@ -37,7 +37,6 @@ $router->post('master', 'MastersController@add');
 $router->patch('master/{id}', 'MastersController@update');
 $router->delete('master/{id}', 'MastersController@remove');
 
-
 /**
  * Routes for resource deck
  */
@@ -46,6 +45,10 @@ $router->get('deck/{id}', 'DecksController@get');
 $router->post('deck', 'DecksController@add');
 $router->patch('deck/{id}', 'DecksController@update');
 $router->delete('deck/{id}', 'DecksController@remove');
+
+$router->get('deck/{id}/user', 'DecksController@getUser');
+$router->get('deck/{id}/master', 'DecksController@getMaster');
+$router->get('deck/{id}/card', 'DecksController@getCards');
 
 /**
  * Routes for resource User

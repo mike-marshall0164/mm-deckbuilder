@@ -3,11 +3,14 @@
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Deck;
+use App\Card;
 
 class DecksController extends Controller {
+    private $relations = ['user', 'master', 'cards'];
+
     public function all()
     {
-        return $this->respond(Response::HTTP_OK, Deck::all());
+        return $this->respond(Response::HTTP_OK, Deck::get());
     }
 
     public function get($id)
@@ -45,21 +48,33 @@ class DecksController extends Controller {
         return $this->respond(Response::HTTP_NO_CONTENT);
     }
 
-    public function addCards(Request $request, $id)
+    public function getUser(Request $request, $id)
     {
-        /** @var Deck|null $deck */
         $deck = Deck::find($id);
         if(is_null($deck)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
-        $deckCards = $deck->cards();
+
+        return $this->respond(Response::HTTP_OK, $deck->user()->get());
     }
 
-    public function removeCards(Request $request, $id)
+    public function getMaster(Request $request, $id)
     {
         $deck = Deck::find($id);
         if(is_null($deck)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
+
+        return $this->respond(Response::HTTP_OK, $deck->master()->get());
+    }
+
+    public function getCards(Request $request, $id)
+    {
+        $deck = Deck::find($id);
+        if (is_null($deck)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        return $this->respond(Response::HTTP_OK, $deck->cards()->get());
     }
 }
