@@ -17,20 +17,23 @@ class Deck extends Model {
         "difficulty" => "in:BEGINNER,INTERMEDIATE,ADVANCED,EXPERT,MEME"
     ];
 
-    public function Master()
+    public function user()
     {
-        return $this->hasOne("App\Master");
+        return $this->belongsTo(User::class);
     }
 
-    public function Cards()
+    public function master()
     {
-        return $this->hasMany("App\Card");
+        return $this->belongsTo(Master::class);
     }
 
-    public function User()
+    public function cards()
     {
-        return $this->belongsTo("App\User");
+        return $this->belongsToMany(Card::class, 'card_deck', 'deck_id', 'card_id');
     }
 
-
+    public function cardsCount()
+    {
+        return $this->belongsToMany(Cards::class)->selectRaw('count(*) as aggregate');
+    }
 }

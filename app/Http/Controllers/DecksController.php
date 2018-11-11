@@ -1,56 +1,79 @@
 <?php namespace App\Http\Controllers;
+
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-
+use App\Deck;
+use App\Card;
 
 class DecksController extends Controller {
 
-    const MODEL = "App\Deck";    
-
     public function all()
     {
-        $m = self::MODEL;
-        return $this->respond(Response::HTTP_OK, $m::all());
+        return $this->respond(Response::HTTP_OK, Deck::get());
     }
 
     public function get($id)
     {
-        $m = self::MODEL;
-        $model = $m::find($id);
-        if(is_null($model)){
+        $deck = Deck::find($id);
+        if(is_null($deck)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
-        return $this->respond(Response::HTTP_OK, $model);
+        return $this->respond(Response::HTTP_OK, $deck);
     }
 
     public function add(Request $request)
     {
-        $m = self::MODEL;
-        $this->validate($request, $m::$rules);
-        return $this->respond(Response::HTTP_CREATED, $m::create($request->all()));
+        $this->validate($request, Deck::$rules);
+        return $this->respond(Response::HTTP_CREATED, Deck::create($request->all()));
     }
 
-    public function put(Request $request, $id)
+    public function update(Request $request, $id)
     {
-        $m = self::MODEL;
-        $this->validate($request, $m::$rules);
-        $model = $m::find($id);
-        if(is_null($model)){
+        $this->validate($request, Deck::$rules);
+        $deck = Deck::find($id);
+        if(is_null($deck)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
-        $model->update($request->all());
-        return $this->respond(Response::HTTP_OK, $model);
+        $deck->update($request->all());
+        return $this->respond(Response::HTTP_OK, $deck);
     }
 
     public function remove($id)
     {
-        $m = self::MODEL;
-        if(is_null($m::find($id))){
+        if(is_null(Deck::find($id))){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
-        $m::destroy($id);
+        Deck::destroy($id);
         return $this->respond(Response::HTTP_NO_CONTENT);
     }
 
-    
+    public function getUser(Request $request, $id)
+    {
+        $deck = Deck::find($id);
+        if(is_null($deck)){
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        return $this->respond(Response::HTTP_OK, $deck->user()->get());
+    }
+
+    public function getMaster(Request $request, $id)
+    {
+        $deck = Deck::find($id);
+        if(is_null($deck)){
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        return $this->respond(Response::HTTP_OK, $deck->master()->get());
+    }
+
+    public function getCards(Request $request, $id)
+    {
+        $deck = Deck::find($id);
+        if (is_null($deck)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        return $this->respond(Response::HTTP_OK, $deck->cards()->get());
+    }
 }

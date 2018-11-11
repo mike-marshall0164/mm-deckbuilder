@@ -24,8 +24,8 @@ class Card extends Model {
     ];
 
     // Relationships
-    public function Decks()
+    public function decks()
     {
-        return $this->belongsToMany("App\Deck", 'card_deck', 'deck_id', 'card_id');
+        return $this->belongsToMany(Deck::class, 'card_deck', 'card_id', 'deck_id');
     }
 }

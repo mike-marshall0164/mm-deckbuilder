@@ -26,7 +26,11 @@ https://laradock.io/getting-started/
     ```
     APP_CODE_PATH_HOST=../mm-deckbuilder/
     ```
-
+- In the laradock directory, add the following to `mysql/my.cnf`
+    ```
+    [mysqld]
+    default_authentication_plugin=mysql_native_password
+    ```
 - In the laradock directory you'll need to bring up the dev environment
     ```bash
     docker-compose up -d apache2 mysql phpmyadmin workspace
@@ -35,13 +39,14 @@ https://laradock.io/getting-started/
     ```sql
     CREATE DATABASE `mm-deckbuilder`;
 
+    CREATE USER `admin`@`%` IDENTIFIED WITH mysql_native_password BY  'admin';
+
     GRANT SELECT, INSERT, UPDATE, DELETE, CREATE, DROP, RELOAD, SHUTDOWN, PROCESS, FILE, REFERENCES, INDEX, ALTER, SHOW DATABASES, SUPER, CREATE TEMPORARY TABLES, LOCK TABLES, EXECUTE, REPLICATION SLAVE, REPLICATION CLIENT, CREATE VIEW, SHOW VIEW, CREATE ROUTINE, ALTER ROUTINE, CREATE USER, EVENT, TRIGGER, CREATE TABLESPACE, CREATE ROLE, DROP ROLE ON *.* TO `admin`@`%` WITH GRANT OPTION;
 
     GRANT BACKUP_ADMIN,BINLOG_ADMIN,CONNECTION_ADMIN,ENCRYPTION_KEY_ADMIN,GROUP_REPLICATION_ADMIN,PERSIST_RO_VARIABLES_ADMIN,REPLICATION_SLAVE_ADMIN,RESOURCE_GROUP_ADMIN,RESOURCE_GROUP_USER,ROLE_ADMIN,SET_USER_ID,SYSTEM_VARIABLES_ADMIN,XA_RECOVER_ADMIN ON *.* TO `admin`@`%` WITH GRANT OPTION;
 
     GRANT ALL PRIVILEGES ON `mm-deckbuilder`.* TO `admin`@`%`;
     ```
- - Using phpmyadmin create a schema for this project (mm-deckbuilder)
  - To run migrations and seed the db
     ```bash
     docker-compose exec workspace bash
