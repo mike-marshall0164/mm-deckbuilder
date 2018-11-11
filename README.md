@@ -47,7 +47,6 @@ https://laradock.io/getting-started/
 
     GRANT ALL PRIVILEGES ON `mm-deckbuilder`.* TO `admin`@`%`;
     ```
- - Using phpmyadmin create a schema for this project (mm-deckbuilder)
  - To run migrations and seed the db
     ```bash
     docker-compose exec workspace bash
