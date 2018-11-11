@@ -6,7 +6,6 @@ use App\Deck;
 use App\Card;
 
 class DecksController extends Controller {
-    private $relations = ['user', 'master', 'cards'];
 
     public function all()
     {
