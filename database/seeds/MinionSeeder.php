@@ -954,9 +954,9 @@ class MinionSeeder extends Seeder
             "crafting_cost" => 2000,
             "can_target_air" => false,
             "radius" => "",
-            "extra_info" => "Cooldown 3 seconds. Dodges for 0.4 seconds, moves 3 range away retargeting to the closest target. If closest target is within 7 range, deals double damage while moving at 30 ,
+            "extra_info" => "Cooldown 3 seconds. Dodges for 0.4 seconds, moves 3 range away retargeting to the closest target. If closest target is within 7 range, deals double damage while moving at 30 ,speed after 0.4 seconds. 0.7 attack delay after performing riposte. It will not perform the moving animation if the target is within 2 range.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")speed after 0.4 seconds. 0.7 attack delay after performing riposte. It will not perform the moving animation if the target is within 2 range."
+            "updated_at" => date("Y-m-d H:i:s")
         ]);
         DB::table('cards')->insert([
             "name" => "Priestess",

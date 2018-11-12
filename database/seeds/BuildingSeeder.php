@@ -133,9 +133,9 @@ class BuildingSeeder extends Seeder
           "rarity" => "Common",
           "crafting_cost" => 50,
           "can_target_air" => true,
-          "extra_info" => "Reduces its attack speed by 300 ms every time it attacks the same target. (Max's out ,
+          "extra_info" => "Reduces its attack speed by 300 ms every time it attacks the same target. (Max's out at a minimum of 100,ms)",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => at a minimum of 100date("Y-m-d H:i:s")ms)"
+          "updated_at" => date("Y-m-d H:i:s")
         ]);
         DB::table('cards')->insert([
           "name" => "Scrat Launcher",
