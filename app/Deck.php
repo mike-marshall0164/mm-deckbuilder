@@ -4,8 +4,17 @@ use Illuminate\Database\Eloquent\Model;
 
 class Deck extends Model {
 
-    protected $fillable = ["name", "description", "upvotes", "wins", "losses", "user_id", "master_id", "difficulty"];
-    // protected $cards;
+    protected $fillable = [
+        "name",
+        "description",
+        "upvotes",
+        "wins",
+        "losses",
+        "user_id",
+        "master_id",
+        "difficulty"
+    ];
+
     protected $dates = [];
 
     public static $rules = [
@@ -13,7 +22,8 @@ class Deck extends Model {
         "upvotes" => "min:0",
         "wins" => "min:0",
         "losses" => "min:0",
-        "user_id" => "required|numeric",
+        "user_id" => "required|exists:cards,id",
+        "master_id" => "exists:masters,id",
         "difficulty" => "in:BEGINNER,INTERMEDIATE,ADVANCED,EXPERT,MEME"
     ];
 
