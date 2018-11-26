@@ -20,7 +20,6 @@ class CreateCardDeckTable extends Migration
                 ->references('id')
                 ->on('decks')
                 ->onDelete('cascade');
-
         });
     }
 

@@ -15,7 +15,6 @@ class CreateCardsTable extends Migration
     {
         Schema::create('cards', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
             $table->string('name');
             $table->string('description');
             $table->string('extra_info')->nullable();
@@ -23,7 +22,7 @@ class CreateCardsTable extends Migration
             $table->string('rarity'); //common rare, supreme etc.
             $table->integer('mana_cost')->default(0);
             $table->integer('crafting_cost');
-            $table->string('img_url');
+            $table->string('img_url')->nullable();
 
             // mostly minion based stats
             $table->string('unit_type')->nullable(); //ground / air
@@ -46,7 +45,7 @@ class CreateCardsTable extends Migration
             //building based stats
             $table->decimal('unit_production_speed')->nullable(); //seconds until generated
             
-            
+            $table->timestamps();
         });
     }
 

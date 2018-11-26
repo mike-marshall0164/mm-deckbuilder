@@ -15,11 +15,10 @@ class CreateMastersTable extends Migration
     {
         Schema::create('masters', function (Blueprint $table) {
             $table->increments('id');
-            $table->timestamps();
-            $table->string("name");
+            $table->string("name")->unique();
             $table->string("description");
-            $table->string('img_url');
             $table->string("extra_data");
+            $table->string('img_url')->nullable();
             $table->decimal("range", 5, 2);
             $table->decimal("attack_damage", 5, 2);
             $table->decimal("target_count", 4, 2);
@@ -27,6 +26,8 @@ class CreateMastersTable extends Migration
             $table->decimal("attack_delay", 4, 2);
             $table->decimal("aoe_size", 5, 2)->nullable();
             $table->boolean("can_hit_air");
+            
+            $table->timestamps();
         });
     }
 
