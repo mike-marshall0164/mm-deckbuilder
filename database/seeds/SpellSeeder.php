@@ -25,7 +25,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Black Holed units do not count towards conditional cards' activation requirements.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/BlackHole04.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Bridge Buddies",
@@ -41,7 +41,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/bridgeBuddies.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Call To Arms",
@@ -57,7 +57,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "There's a slight delay. Any buildings destroyed during the delay will not be replaced by Call To Arms.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/callToArms.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Combustion",
@@ -73,7 +73,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Hits ALL enemies around the Combustion'd Minion. ",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/combustion.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Shock Rock",
@@ -89,7 +89,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/shockrock.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Cheese Date",
@@ -105,7 +105,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Possible minions: Scrat Horde, Sniper Scrat, Bazooka Scrat, Armored Scrats",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/CheeseDate.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Clear Skies",
@@ -121,7 +121,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ClearSkies.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Daggerfall",
@@ -137,7 +137,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/daggerfall.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Gambler's Ball",
@@ -153,7 +153,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Stats of this card are decided by which spell it casts. Refer to Healing Fireball(3 Mana) and Fireball(4 Mana) for detailed statistics.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/gamblersBall.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Gor'Rakk Sacrifice",
@@ -169,7 +169,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/GorRakkRitual.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Healing Fireball",
@@ -185,7 +185,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/healingFireball.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Netherstep",
@@ -201,7 +201,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Teleport Distance: 10",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/NetherStep.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Rampage",
@@ -217,7 +217,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/rampage.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Stun Blast",
@@ -233,7 +233,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/stunBlasts.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Sun Burn",
@@ -249,7 +249,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Can hit your own minions and masters!",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/sunBurn.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Blind Date",
@@ -265,7 +265,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/BlindDate02.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Chain Lightning",
@@ -281,7 +281,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ChainLightning_01.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Fireball",
@@ -297,7 +297,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/fireball03.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Future Past",
@@ -313,7 +313,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Can not draw Future Past or Future Present",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/FuturePast.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Hypnotize",
@@ -329,7 +329,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Hypnotised units count towards conditional card' activation requirements.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/hypnotize.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Lightning Bolt",
@@ -345,7 +345,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/lightningBolt.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Raging Reinforcements",
@@ -361,7 +361,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ragingReinforcements.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Spirit Infusion",
@@ -377,7 +377,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/spiritInfusion.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Dragon Ball",
@@ -393,7 +393,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/dragonBall.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Infiltration",
@@ -409,7 +409,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/infiltration.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Magma Storm",
@@ -425,7 +425,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Summons 2 rocks per second that deal 200 Damage each in a radius of 3.5 range each, only 20 damage each to Masters. Can hit your own minions and master!",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/MagmaStorm.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Beam of DOOM!",
@@ -441,7 +441,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/BeamOfDoom03.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Last Stand",
@@ -457,7 +457,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/lastStand.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Future Present",
@@ -473,7 +473,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Can not draw Future Past or Future Present",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/FuturePresent.jpg"
             ]);
 
     }
