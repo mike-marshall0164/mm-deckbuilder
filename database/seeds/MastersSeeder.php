@@ -25,7 +25,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "For each card that costs 5 or more in his hand, Apep gains 35% attack speed.  1st stack is 1.9, then 1.5, then 1.2, and finally 1",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Apep_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Apep_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -42,7 +42,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/RoyalPuff_Portrait.png",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/RoyalPuff_Portrait.png",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -59,7 +59,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "For each spell in hand, Milloween fires an additional spark",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Millowen_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Millowen_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -76,7 +76,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "Reduces attackspeed every 3rd hit. DPS of each is listed here:",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Mordar_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Mordar_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -93,7 +93,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Ratbo_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Ratbo_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -110,7 +110,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Ravager_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Ravager_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -127,7 +127,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "After 5 Shots She Has To Reload Over A 5 Second Duration.",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Settsu_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Settsu_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -144,7 +144,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> true,
           "aoe_size"=> "",
           "extra_data"=> "",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Stormbringer_Portrait.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Stormbringer_Portrait.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
@@ -161,7 +161,7 @@ class MastersSeeder extends Seeder
           "can_hit_air"=> false,
           "aoe_size"=> 2,
           "extra_data"=> "",
-          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Volco.jpg",
+          "img_url"=> "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Masters/Volco.jpg",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s")
         ]);
