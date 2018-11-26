@@ -32,7 +32,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Has Overkill - Damage dealt to it is also dealt to its Master. Love hurts!",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Illusory Cleaver",
@@ -54,7 +55,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Explodes when killed for 30 damage in 2.5 range. Explosion considered 'Special'.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Mana Puff",
@@ -76,7 +78,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Generates 1 Mana per 'attack'",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Scrat Pack",
@@ -98,7 +101,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Screaming Scrat",
@@ -120,7 +124,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Explodes after 5 seconds (for 100 damage in 6 AOE range); Has no attack, goes only for the master tower.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Boomer",
@@ -142,7 +147,8 @@ class MinionSeeder extends Seeder
             "radius" => 6,
             "extra_info" => "Takes 3.5 Seconds To Morph, is considered 'Special', not 'Melee'",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Crossbow Dudes",
@@ -164,7 +170,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Disruptor Puffs",
@@ -186,7 +193,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Increases price of enemy cards by 2. Max 10 total cost per card.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Elite Swarmer",
@@ -208,7 +216,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Grenadier",
@@ -230,7 +239,8 @@ class MinionSeeder extends Seeder
             "radius" => 3,
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Heal Puff",
@@ -252,7 +262,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Heals 25HP every second",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Propeller Scrats",
@@ -274,7 +285,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Ravenous Swarmers",
@@ -296,7 +308,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "S.T. INT",
@@ -318,7 +331,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Swarmers",
@@ -340,7 +354,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Zeppelin Bomber",
@@ -362,7 +377,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Armored Scrats",
@@ -384,7 +400,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Banner Man",
@@ -406,7 +423,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Also always starts himself with a shield, in adition to the given ones.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Bazooka Scrat",
@@ -428,7 +446,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Brutish Betrayer",
@@ -450,7 +469,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Cursebearer",
@@ -472,7 +492,8 @@ class MinionSeeder extends Seeder
             "radius" => 6,
             "extra_info" => "His Losing 3% of Health/sec Curse ability only hits ground and persists 5 seconds after his death.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Dragon Whelp",
@@ -494,7 +515,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Lost Legionnaires",
@@ -516,7 +538,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Plasma Marines",
@@ -538,7 +561,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Tantrum Throwers",
@@ -560,7 +584,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Re-Boomer",
@@ -582,7 +607,8 @@ class MinionSeeder extends Seeder
             "radius" => 6,
             "extra_info" => "Takes 3.5 Seconds To Morph, is considered 'Special', not 'Melee'",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Scrat Horde",
@@ -604,7 +630,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Snake Druid",
@@ -626,7 +653,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Sniper Scrat",
@@ -648,7 +676,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Spirit Vessel",
@@ -670,7 +699,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "When killed, a random friendly minion gains 100 Health.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Walking Blind Date",
@@ -692,7 +722,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Instantly kills itself upon meeting enemy Master. 1.3ms taken to summon a random creature after death.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Warrior",
@@ -714,7 +745,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Xiao Long",
@@ -736,7 +768,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Assassin",
@@ -758,7 +791,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Cloaks on summon and in between attacks. Deals triple damage when cloaked.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Bounty Sniper",
@@ -780,7 +814,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Gives 2XP Per Kill or whenever he hits the enemy Master Tower",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Cannon Roller",
@@ -802,7 +837,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Rolls back 2.5 Range after each attack. Rolling back lasts for 1 second. Bug: It keeps rolling when reaching the edge of the arena.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Drone Buzzers",
@@ -824,7 +860,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Drone Walker",
@@ -846,7 +883,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Fire Imp",
@@ -868,7 +906,8 @@ class MinionSeeder extends Seeder
             "radius" => 3,
             "extra_info" => "220 total damage. 20 damage every .4 seconds. 20 damage on impact.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Flightless Dragons",
@@ -890,7 +929,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Ghost",
@@ -912,7 +952,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "It channels for the attackDelay time, then takes over the unit and gives it Curse. Curse is a debuff that deals 3% of the units health in damage every second.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Morgrul The Swarmer King",
@@ -934,7 +975,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Roar knockbacks all enemies 4 Range away from Morgrul.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Musketeer",
@@ -956,7 +998,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Cooldown 3 seconds. Dodges for 0.4 seconds, moves 3 range away retargeting to the closest target. If closest target is within 7 range, deals double damage while moving at 30 ,speed after 0.4 seconds. 0.7 attack delay after performing riposte. It will not perform the moving animation if the target is within 2 range.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Priestess",
@@ -978,7 +1021,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Healing range is 7. She heals 10HP every 0.3 seconds. (Note: There is a bug, the game engine can't keep up with her so she won't heal quite 40HP/sec)",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Propeller Horde",
@@ -1000,7 +1044,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Rammer",
@@ -1022,7 +1067,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Shielded Crossbow Dudes",
@@ -1044,7 +1090,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Effects that deal no damage ignore the shield.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Spear Throwers",
@@ -1066,7 +1113,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Throws their spears on their first attack for double damage.(8 range) After that they use melee only.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Stun Lancers",
@@ -1088,7 +1136,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Stuns target for 2 seconds. (Stun is applied before damage, so Succubus won't blink back when attacked by Stun Lancers)",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Tranquil Shi-Hou",
@@ -1110,7 +1159,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Heals itself for 20HP every .4 seconds while no enemies are within 8 range of itself. Doesn't move while healing.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Undying Skeleton",
@@ -1132,7 +1182,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Revives after 25 seconds the first time it dies.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Whirly Scrat",
@@ -1154,7 +1205,8 @@ class MinionSeeder extends Seeder
             "radius" => 3,
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Annihilator",
@@ -1176,7 +1228,8 @@ class MinionSeeder extends Seeder
             "radius" => 3,
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Battle Shi-Hou",
@@ -1198,7 +1251,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "1 Increase per minion, Max 5. Attack speed increases to 1.7, then 1.2, then .8, then .6, then .4 (within 8 range of the Monkey) Doesn't count buildings.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Blastmancer",
@@ -1220,7 +1274,8 @@ class MinionSeeder extends Seeder
             "radius" => 50,
             "extra_info" => "Deals 20 AOE Damage on Kill",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Defenso Chopper",
@@ -1242,7 +1297,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Melee Enemies attacking him are stunned for 3 seconds and hit with 100 Damage",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "A.I.M. Bot",
@@ -1264,7 +1320,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Divine Warrior",
@@ -1286,7 +1343,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Immune To Damage For 8 Seconds",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Gax The World Bomb",
@@ -1308,7 +1366,8 @@ class MinionSeeder extends Seeder
             "radius" => 50,
             "extra_info" => "Takes 3.5 Seconds To Morph, deals damage to everything, allied and unallied. Egg has 50 Health. Considered 'Special', not 'Melee'",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Incubus",
@@ -1330,7 +1389,8 @@ class MinionSeeder extends Seeder
             "radius" => 3,
             "extra_info" => "Deals AOE damage in a .14 range cone in front of his center of radius",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Legionnaires",
@@ -1352,7 +1412,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Living Statue",
@@ -1374,7 +1435,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Prowler",
@@ -1396,7 +1458,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Deals 170 damage on leap. Leaps 3 to 8 range away from itself, Adding 50 speed while leaping.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Scott The Sensitive Savage",
@@ -1418,7 +1481,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Scrat Tank",
@@ -1440,7 +1504,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Soul Stealer",
@@ -1462,7 +1527,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Soul Stealer reduces his attack cooldown and attack delay by 20% per kill. Max 10 kills, minimum 100ms attack speed & delay.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Sniper Squad",
@@ -1484,7 +1550,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Spiritmancer",
@@ -1506,7 +1573,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Random Ally Gains 100Health On Kill",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Succubus",
@@ -1528,7 +1596,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Succubus teleports 8 range towards her Master when attacked by a melee minion. This has a 1 second cooldown.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Wizard Puff",
@@ -1550,7 +1619,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "AtG Drone x8",
@@ -1572,7 +1642,8 @@ class MinionSeeder extends Seeder
             "radius" => 6,
             "extra_info" => "Shoots 1 projectile per target, No maximum number of targets. Follows the closest enemy Minion as long as they are in aggro range. get recked -fdmfdm",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Cleaver",
@@ -1594,7 +1665,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Demon Warrior",
@@ -1616,7 +1688,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "No longer scales with each level. Now, she gains 300 HP and 300 Damage when she has been played 5 times.Final DPS is 160, the highest in the game",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Guardian",
@@ -1638,7 +1711,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Rapid Prowler",
@@ -1660,7 +1734,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Styxi",
@@ -1682,7 +1757,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Blue Golem",
@@ -1704,7 +1780,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Dragon Pack",
@@ -1726,7 +1803,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Empowered Soul Stealer",
@@ -1748,7 +1826,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Starts with Marksmanship. Starts with three extra souls as well if there is a friendly minion with Rage on the field.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Harbringer",
@@ -1770,7 +1849,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "Knocks enemy minions back 6 Range on each hit. Formerly known as the 'Drone Force One'.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Shars'Rakk Twins",
@@ -1792,7 +1872,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Commander Azali",
@@ -1814,7 +1895,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Gor'Rakk Brutes",
@@ -1836,7 +1918,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Troubadour",
@@ -1858,7 +1941,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Colossus",
@@ -1880,7 +1964,8 @@ class MinionSeeder extends Seeder
             "radius" => 6,
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Red Golem",
@@ -1902,7 +1987,8 @@ class MinionSeeder extends Seeder
             "radius" => "",
             "extra_info" => "When revived by a Tombstone, the Red Golem's Health is set based on Mordar's current Health at the time of revival.",
             "created_at" => date("Y-m-d H:i:s"),
-            "updated_at" => date("Y-m-d H:i:s")
+            "updated_at" => date("Y-m-d H:i:s"),
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/toombstone.jpg"
         ]);
 
     }

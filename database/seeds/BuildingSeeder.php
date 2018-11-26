@@ -27,7 +27,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Wall03.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Ghost Turret",
@@ -45,7 +46,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => false,
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ghostTurret.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Healing Shrine",
@@ -63,7 +65,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "The healing is an ability so Stormbringer doesn't increase the shrine's range",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/HealingShrine.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Bridge Shrine",
@@ -81,7 +84,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "For reference, a regular bridge generates 1 XP per 4 sec. aswell.",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/bridgeShrine.png"
         ]);
         DB::table('cards')->insert([
           "name" => "Magma Cannon",
@@ -99,7 +103,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => true,
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/mamgmaCannon.png"
         ]);
         DB::table('cards')->insert([
           "name" => "Dragon Nest",
@@ -117,7 +122,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/DragonNest03.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Laser Turret",
@@ -135,7 +141,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => true,
           "extra_info" => "Reduces its attack speed by 300 ms every time it attacks the same target. (Max's out at a minimum of 100,ms)",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/laserTurret.png"
         ]);
         DB::table('cards')->insert([
           "name" => "Scrat Launcher",
@@ -153,7 +160,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/seigeturret02.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Swarmer Totem",
@@ -171,7 +179,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/swarmerTotem.png"
         ]);
         DB::table('cards')->insert([
           "name" => "Crossbow Guild",
@@ -189,7 +198,8 @@ class BuildingSeeder extends Seeder
           "can_target_air" => "",
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
-          "updated_at" => date("Y-m-d H:i:s")
+          "updated_at" => date("Y-m-d H:i:s"),
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/CrossbowGuild.jpg"
         ]);
   }
 }
