@@ -217,7 +217,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/EliteSwarmer02.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/EliteSwarmer_02.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Grenadier",
@@ -263,7 +263,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "Heals 25HP every second",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/healPuff.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/healPuff.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Propeller Scrats",
@@ -309,7 +309,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ravenousSwarmers.png"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/ravenousSwarmers.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "S.T.I.N.T.",
@@ -493,7 +493,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "His Losing 3% of Health/sec Curse ability only hits ground and persists 5 seconds after his death.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/cursebearer.png"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/cursebearer.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Dragon Whelp",
@@ -631,7 +631,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/scratHorde.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/scratHorde.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Snake Druid",
@@ -654,7 +654,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/snakeDruid.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/snakeDruid.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Sniper Scrat",
@@ -838,7 +838,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "Rolls back 2.5 Range after each attack. Rolling back lasts for 1 second. Bug: It keeps rolling when reaching the edge of the arena.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/cannonRoller.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/cannonRoller.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Drone Buzzers",
@@ -953,7 +953,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "It channels for the attackDelay time, then takes over the unit and gives it Curse. Curse is a debuff that deals 3% of the units health in damage every second.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Ghost.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Ghost.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Morgrul The Swarmer King",
@@ -1183,7 +1183,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "Revives after 25 seconds the first time it dies.",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/UndyingSkeleton.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/UndyingSkeletton.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Whirly Scrat",
@@ -1574,7 +1574,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "Random Ally Gains 100Health On Kill",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Spiritmancer.png"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Spiritmancer.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Succubus",
@@ -1758,7 +1758,7 @@ class MinionSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Styxi.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/Styxi.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Blue Golem",

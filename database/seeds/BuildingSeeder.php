@@ -104,7 +104,7 @@ class BuildingSeeder extends Seeder
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s"),
-          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/mamgmaCannon.png"
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/magmaCannon.png"
         ]);
         DB::table('cards')->insert([
           "name" => "Dragon Nest",
@@ -161,7 +161,7 @@ class BuildingSeeder extends Seeder
           "extra_info" => "",
           "created_at" => date("Y-m-d H:i:s"),
           "updated_at" => date("Y-m-d H:i:s"),
-          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/seigeturret02.jpg"
+          "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/siegeturret02.jpg"
         ]);
         DB::table('cards')->insert([
           "name" => "Swarmer Totem",

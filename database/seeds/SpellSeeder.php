@@ -89,7 +89,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/shockrock.png"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/shockRock.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Cheese Date",
@@ -233,7 +233,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/stunBlasts.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/stunBlast.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Sun Burn",
@@ -249,7 +249,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "Can hit your own minions and masters!",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/sunBurn.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/SunBurn.jpg"
         ]);
         DB::table('cards')->insert([
             "name" => "Blind Date",
@@ -409,7 +409,7 @@ class SpellSeeder extends Seeder
             "extra_info" => "",
             "created_at" => date("Y-m-d H:i:s"),
             "updated_at" => date("Y-m-d H:i:s"),
-            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/infiltration.jpg"
+            "img_url" => "https://s3-us-west-2.amazonaws.com/mm-deckbuilder-resources/images/Cards/inflitration.png"
         ]);
         DB::table('cards')->insert([
             "name" => "Magma Storm",
