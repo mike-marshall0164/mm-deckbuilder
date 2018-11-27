@@ -11,7 +11,7 @@ class Card extends Model {
         "rarity", "mana_cost", "crafting_cost", "unit_type",
         "unit_count", "unit_health", "unit_speed", "unit_range",
         "damage", "target_count", "attack_speed", "attack_delay",
-        "can_target_air", "radius", "duration", "delay"];
+        "can_target_air", "radius", "duration", "delay", "img_url"];
 
     protected $dates = [];
 
@@ -20,7 +20,8 @@ class Card extends Model {
         "description" => "required",
         "card_type"=> "required|in:UNIT,SPELL,BUILDING",
         "unit_count"=> "nullable",
-        "unit_type"=> "in:GROUND,AIR"
+        "unit_type"=> "in:GROUND,AIR",
+        'img_url' => 'url|required'
     ];
 
     // Relationships
