@@ -5,16 +5,17 @@ use App\Card;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
-class DecksController extends Controller {
+class DecksController extends BaseController {
 
     public function all()
     {
-        return $this->respond(Response::HTTP_OK, Deck::get());
+        return $this->respond(Response::HTTP_OK, Deck::all());
     }
 
     public function get($id)
     {
-        $deck = Deck::find($id);
+        $deck = Deck::with('cards', 'master')->find($id);
+    
         if(is_null($deck)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
@@ -24,7 +25,12 @@ class DecksController extends Controller {
     public function add(Request $request)
     {
         $this->validate($request, Deck::$rules);
-        return $this->respond(Response::HTTP_CREATED, Deck::create($request->all()));
+        $deck = Deck::create($request->except('cards'));
+
+        $cardIds = $request->only('cards')['cards'];
+
+        $deck->cards()->attach($cardIds);
+        return $this->respond(Response::HTTP_CREATED, $deck);
     }
 
     public function update(Request $request, $id)
@@ -75,5 +81,41 @@ class DecksController extends Controller {
         }
 
         return $this->respond(Response::HTTP_OK, $deck->cards()->get());
+    }
+
+    public function addCards(Request $request, $deckId, $cardId)
+    {
+        $deck = Deck::find($deckId);
+        if (is_null($deck)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        $card = Card::find($cardId);
+        if (is_null($card)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+
+        $deck->cards()->attach($cardId);
+
+        return $this->respond(Response::HTTP_CREATED);
+    }
+
+    public function addCard(Request $request, $deckId, $cardId)
+    {
+        $deck = Deck::find($deckId);
+        if (is_null($deck)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+        $card = Card::find($cardId);
+        if (is_null($card)) {
+            return $this->respond(Response::HTTP_NOT_FOUND);
+        }
+
+
+        $deck->cards()->attach($cardId);
+
+        return $this->respond(Response::HTTP_CREATED);
     }
 }

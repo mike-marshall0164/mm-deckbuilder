@@ -50,6 +50,7 @@ $router->get('deck/{id}/user', 'DecksController@getUser');
 $router->get('deck/{id}/master', 'DecksController@getMaster');
 $router->get('deck/{id}/card', 'DecksController@getCards');
 
+$router->post('deck/{deckId}/card/{cardId}', 'DecksController@addCard');
 /**
  * Routes for resource User
  */

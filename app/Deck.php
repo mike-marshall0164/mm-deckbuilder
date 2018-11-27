@@ -3,6 +3,7 @@
 use Illuminate\Database\Eloquent\Model;
 
 class Deck extends Model {
+    const MAX_CARDS = 10;
 
     protected $fillable = [
         "name",
@@ -24,7 +25,8 @@ class Deck extends Model {
         "losses" => "min:0",
         "user_id" => "required|exists:cards,id",
         "master_id" => "exists:masters,id",
-        "difficulty" => "in:BEGINNER,INTERMEDIATE,ADVANCED,EXPERT,MEME"
+        "difficulty" => "in:BEGINNER,INTERMEDIATE,ADVANCED,EXPERT,MEME",
+        "cards" => "array"
     ];
 
     public function user()

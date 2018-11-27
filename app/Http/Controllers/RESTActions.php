@@ -5,10 +5,10 @@ use Illuminate\Http\Response;
 
 trait RESTActions {
 
-
     public function all()
     {
         $m = self::MODEL;
+
         return $this->respond(Response::HTTP_OK, $m::all());
     }
 
@@ -16,6 +16,11 @@ trait RESTActions {
     {
         $m = self::MODEL;
         $model = $m::find($id);
+        if (!empty(self::RELATIONS)) {
+            foreach (self::RELATIONS as $relation) {
+                $model->load($relation);
+            }
+        }
         if(is_null($model)){
             return $this->respond(Response::HTTP_NOT_FOUND);
         }
@@ -51,5 +56,8 @@ trait RESTActions {
         return $this->respond(Response::HTTP_NO_CONTENT);
     }
 
-
+    protected function respond($statusCode, $data = [])
+    {
+        return response()->json($data, $statusCode);
+    }
 }

@@ -1,8 +1,11 @@
 <?php namespace App\Http\Controllers;
 
-class MastersController extends Controller {
+use App\Master;
+use Laravel\Lumen\Routing\Controller as BaseController;
 
-    const MODEL = "App\Master";
+class MastersController extends BaseController{
+
+    const MODEL = Master::class;
 
     use RESTActions;
 

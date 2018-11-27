@@ -1,9 +1,11 @@
 <?php namespace App\Http\Controllers;
 
-class CardsController extends Controller {
+use App\Card;
+use Laravel\Lumen\Routing\Controller as BaseController;
 
-    const MODEL = "App\Card";
+class CardsController extends BaseController {
+
+    const MODEL = Card::class;
 
     use RESTActions;
-
 }
